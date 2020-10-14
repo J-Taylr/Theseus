@@ -1,13 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject inputField;
+    public string steps;
+    public int stepsNum;
+
+    public int getSteps()
     {
-        
+
+        steps = inputField.GetComponent<Text>().text;
+        int stepsInt = Int32.Parse(steps);
+        return stepsInt;
+
+
     }
 
     // Update is called once per frame
@@ -18,7 +29,10 @@ public class CharacterMove : MonoBehaviour
 
     public void PlayerMove()
     {
-        if (Input.GetKeyDown(KeyCode.W)) //w moves player forward one space 
+        TextToMove move = new TextToMove();
+        stepsNum = getSteps();
+
+        if (stepsNum != 0) //w moves player forward one space 
         {
             var currentPos = gameObject.transform.position;
             var newPosW = currentPos + Vector3.forward * 10;
@@ -50,4 +64,6 @@ public class CharacterMove : MonoBehaviour
             currentPos = newPosW;
         }
     }
+
+
 }

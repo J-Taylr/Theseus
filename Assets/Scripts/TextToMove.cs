@@ -1,17 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class movement : MonoBehaviour
+public class TextToMove : MonoBehaviour
 {
     public string steps;
     public GameObject inputField;
     public Vector3 position;
 
-    public void Move()
+    public int getSteps()
     {
         steps = inputField.GetComponent<Text>().text;
+        int stepsInt = Int32.Parse(steps);
+        return stepsInt;
 
 
     }
