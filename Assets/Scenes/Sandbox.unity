@@ -36855,7 +36855,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1722712426}
+      - m_Target: {fileID: 1722712424}
         m_MethodName: PlayerMove
         m_Mode: 1
         m_Arguments:
@@ -41101,7 +41101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1722712425}
   - component: {fileID: 1722712424}
-  - component: {fileID: 1722712426}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -41118,12 +41117,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1722712423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ae65586d6244a4384ba42a4bc85517, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d1255c945efd3b4c8e5862291c01d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  steps: 
   inputField: {fileID: 441371121}
-  position: {x: 0, y: 0, z: 0}
+  steps: 
+  stepsNum: 0
+  cube: {fileID: 1935693073}
+  direction: 
+  north: north
+  south: south
+  east: east
+  west: west
 --- !u!4 &1722712425
 Transform:
   m_ObjectHideFlags: 0
@@ -41138,22 +41143,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1722712426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722712423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d1255c945efd3b4c8e5862291c01d1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputField: {fileID: 1319911028}
-  steps: 
-  stepsNum: 0
-  cube: {fileID: 1935693073}
 --- !u!1001 &1723141548
 PrefabInstance:
   m_ObjectHideFlags: 0
