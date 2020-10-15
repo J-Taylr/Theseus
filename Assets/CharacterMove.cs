@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,36 +11,26 @@ public class CharacterMove : MonoBehaviour
     public GameObject inputField;
     public string steps;
     public int stepsNum;
+    public GameObject cube;
 
-    public int getSteps()
+    public void PlayerMove()
     {
 
         steps = inputField.GetComponent<Text>().text;
         int stepsInt = Int32.Parse(steps);
-        return stepsInt;
+        stepsNum = stepsInt;
 
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        PlayerMove();
-    }
-
-    public void PlayerMove()
-    {
-        TextToMove move = new TextToMove();
-        stepsNum = getSteps();
-
-        if (stepsNum != 0) //w moves player forward one space 
+        if (stepsNum == 1) //w moves player forward one space 
         {
-            var currentPos = gameObject.transform.position;
-            var newPosW = currentPos + Vector3.forward * 10;
-            gameObject.transform.position = newPosW;
-            currentPos = newPosW;
-        }
 
+            var currentPos = cube.transform.position;
+            var newPosW = currentPos + Vector3.forward * 10;
+            cube.transform.position = newPosW;
+            currentPos = newPosW;
+
+
+        }
         if (Input.GetKeyDown(KeyCode.A)) // a moves player left one space 
         {
             var currentPos = gameObject.transform.position;
@@ -64,6 +55,7 @@ public class CharacterMove : MonoBehaviour
             currentPos = newPosW;
         }
     }
+
 
 
 }

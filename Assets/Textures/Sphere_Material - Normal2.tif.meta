@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1e707b1cd0e79ad4a9ca23867a8f8ccc
+=======
+guid: 0fb940fdc61a61e4497dd64359b66cc4
+>>>>>>> e7d40fd69aaa763d953c2e3c18ee97fb501bfe03
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -31,18 +35,31 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> e7d40fd69aaa763d953c2e3c18ee97fb501bfe03
     aniso: -1
     mipBias: -100
     wrapU: -1
     wrapV: -1
     wrapW: -1
+<<<<<<< HEAD
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
+=======
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+>>>>>>> e7d40fd69aaa763d953c2e3c18ee97fb501bfe03
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -58,6 +75,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   applyGammaDecoding: 0
+<<<<<<< HEAD
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -83,6 +101,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+  platformSettings: []
+>>>>>>> e7d40fd69aaa763d953c2e3c18ee97fb501bfe03
   spriteSheet:
     serializedVersion: 2
     sprites: []
