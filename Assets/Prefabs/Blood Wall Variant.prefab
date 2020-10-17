@@ -7,10 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2226470796575833091, guid: 63b06c2fbecb24148bd259af93b348ec,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74a524b2dde08e74e88463e02d630c95, type: 2}
+    - target: {fileID: 3737038599652734102, guid: 63b06c2fbecb24148bd259af93b348ec,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74a524b2dde08e74e88463e02d630c95, type: 2}
+    - target: {fileID: 3737038600617372842, guid: 63b06c2fbecb24148bd259af93b348ec,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74a524b2dde08e74e88463e02d630c95, type: 2}
+    - target: {fileID: 3737038601564459988, guid: 63b06c2fbecb24148bd259af93b348ec,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74a524b2dde08e74e88463e02d630c95, type: 2}
     - target: {fileID: 5295371842463457170, guid: 63b06c2fbecb24148bd259af93b348ec,
         type: 3}
       propertyPath: m_Name
-      value: Blood Wall
+      value: Blood Wall Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5895496358972837346, guid: 63b06c2fbecb24148bd259af93b348ec,
         type: 3}
