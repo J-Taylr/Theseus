@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: c6fe7e274b082fb449ce3fe81830091d, type: 2}
 --- !u!1001 &2133694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16665,6 +16665,48 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 974836135}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &974950687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1846788605277360779, guid: 239b0bcd7a3fc334bbe77a2b45ba778a,
+    type: 3}
+  m_PrefabInstance: {fileID: 916950328387273999}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &974950688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974950687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49500e2ab9337ce4ba9eee9924cb3a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1935693073}
+  agent: {fileID: 974950693}
+--- !u!195 &974950693
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974950687}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 10
+  m_Acceleration: 17
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &975849981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36571,7 +36613,7 @@ PrefabInstance:
     - target: {fileID: 3559843281986524247, guid: 5aaa7ae8fc7d1dc43998d3d5030e7491,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.8
+      value: -60.4
       objectReference: {fileID: 0}
     - target: {fileID: 3559843281986524247, guid: 5aaa7ae8fc7d1dc43998d3d5030e7491,
         type: 3}
@@ -36581,7 +36623,7 @@ PrefabInstance:
     - target: {fileID: 3559843281986524247, guid: 5aaa7ae8fc7d1dc43998d3d5030e7491,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -39.2
+      value: 20.8
       objectReference: {fileID: 0}
     - target: {fileID: 3559843281986524247, guid: 5aaa7ae8fc7d1dc43998d3d5030e7491,
         type: 3}
