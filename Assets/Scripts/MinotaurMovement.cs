@@ -25,13 +25,13 @@ public class MinotaurMovement : MonoBehaviour
 
         if (minotaurMoving) 
         {            
-                if (minotaurPosition.x - minotaur.transform.position.x < -4)
+                if (minotaurPosition.x - minotaur.transform.position.x < -40||minotaurPosition.z-minotaur.transform.position.z<-40||minotaurPosition.x-minotaur.transform.position.x<40||minotaurPosition.z-minotaur.transform.position.z<40)
                 {
                     print(minotaur.transform.position);
                     minotaur.GetComponent<NavMeshAgent>().isStopped = true;
                     minotaurMoving = false;
 
-                    print("minotaur last  position" + minotaurPosition);
+                    print("minotaur last  position" + minotaurPosition.z);
                     
 
                 }            
@@ -48,7 +48,7 @@ public class MinotaurMovement : MonoBehaviour
 
         
        
-          print("minotaur first position position"+minotaurPosition);
+          //print("minotaur first position position"+minotaurPosition);
 
          
 
@@ -59,7 +59,7 @@ public class MinotaurMovement : MonoBehaviour
        
 
         minotaurPosition = minotaur.transform.position;
-        print("out if" + minotaurPosition);
+        //print("out if" + minotaurPosition);
         
 
 
