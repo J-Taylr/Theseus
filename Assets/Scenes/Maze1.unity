@@ -15973,7 +15973,7 @@ MonoBehaviour:
   agent: {fileID: 974950693}
   minotaur: {fileID: 974950687}
   minotaurPosition: {x: 0, y: 0, z: 0}
-  move: {fileID: 0}
+  move: {fileID: 1722712426}
 --- !u!4 &361176518
 Transform:
   m_ObjectHideFlags: 0
