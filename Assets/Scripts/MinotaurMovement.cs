@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
 
 public class MinotaurMovement : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class MinotaurMovement : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject minotaur;
     public Vector3 minotaurPosition;
+    public CharacterMove move = new CharacterMove();
 
     bool minotaurMoving = false;
     // Update is called once per frame
@@ -24,8 +27,10 @@ public class MinotaurMovement : MonoBehaviour
     {
 
         if (minotaurMoving) 
-        {            
-                if (minotaurPosition.x - minotaur.transform.position.x < -40||minotaurPosition.z-minotaur.transform.position.z<-40||minotaurPosition.x-minotaur.transform.position.x<40||minotaurPosition.z-minotaur.transform.position.z<40)
+        {
+            int moveSq= move.stepsNum*10;
+            print(moveSq);
+                if (Math.Abs( minotaurPosition.x - minotaur.transform.position.x )> moveSq||Math.Abs( minotaurPosition.z-minotaur.transform.position.z)>moveSq)
                 {
                     print(minotaur.transform.position);
                     minotaur.GetComponent<NavMeshAgent>().isStopped = true;
@@ -59,7 +64,7 @@ public class MinotaurMovement : MonoBehaviour
        
 
         minotaurPosition = minotaur.transform.position;
-        //print("out if" + minotaurPosition);
+        
         
 
 
