@@ -21,8 +21,8 @@ public class CharacterMove : MonoBehaviour
 
     private void Start()
     {
-        
-        
+
+
     }
 
     public void PlayerMove()
@@ -52,9 +52,9 @@ public class CharacterMove : MonoBehaviour
                 print("cannot Move here ");
             }
             else
-            { 
-            cube.transform.position = newPosW;
-            currentPos = newPosW;
+            {
+                cube.transform.position = newPosW;
+                currentPos = newPosW;
             }
         }
 
@@ -74,9 +74,9 @@ public class CharacterMove : MonoBehaviour
             }
             else
             {
-                
-            cube.transform.position = newPosW;
-            currentPos = newPosW;
+
+                cube.transform.position = newPosW;
+                currentPos = newPosW;
             }
         }
 
@@ -96,7 +96,7 @@ public class CharacterMove : MonoBehaviour
             else
             {
                 cube.transform.position = newPosW;
-                currentPos = newPosW;                
+                currentPos = newPosW;
             }
         }
 
@@ -115,13 +115,13 @@ public class CharacterMove : MonoBehaviour
             }
             else
             {
-             cube.transform.position = newPosW;
-             currentPos = newPosW;                
+                cube.transform.position = newPosW;
+                currentPos = newPosW;
             }
             print("im here");
         }
     }
 
-   
+
 
 }
