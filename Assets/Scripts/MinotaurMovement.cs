@@ -10,7 +10,7 @@ public class MinotaurMovement : MonoBehaviour
     public GameObject minotaur;
     public Vector3 minotaurPosition;
 
-
+    bool minotaurMoving = false;
     // Update is called once per frame
     private void Start()
     {
@@ -18,9 +18,31 @@ public class MinotaurMovement : MonoBehaviour
         minotaurPosition = minotaur.transform.position;
        
     }
+
+
+    private void Update()
+    {
+
+        if (minotaurMoving) 
+        {            
+                if (minotaurPosition.x - minotaur.transform.position.x < -4)
+                {
+                    print(minotaur.transform.position);
+                    minotaur.GetComponent<NavMeshAgent>().isStopped = true;
+                    minotaurMoving = false;
+
+                    print("minotaur last  position" + minotaurPosition);
+                    
+
+                }            
+        }
+    }
+
+
     public void MinotaurM()
     {
-        bool x;
+        
+        minotaurMoving = true;
         minotaur.GetComponent<NavMeshAgent>().isStopped = false;
         Vector3 positionOfPlayer = GameObject.Find("Player").transform.position;
 
@@ -31,19 +53,8 @@ public class MinotaurMovement : MonoBehaviour
          
 
             agent.SetDestination(positionOfPlayer);
-       
-       
 
-            if (minotaurPosition.x - minotaur.transform.position.x < -4)
-            {
-                print(minotaur.transform.position);
-                minotaur.GetComponent<NavMeshAgent>().isStopped = true;
-
-                print("minotaur last  position" + minotaurPosition);
-                x = false;
-
-            }
-         
+        
 
        
 
