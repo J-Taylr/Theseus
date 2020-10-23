@@ -31730,7 +31730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -62307,6 +62307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466290582}
   - component: {fileID: 1466290581}
+  - component: {fileID: 1466290583}
   m_Layer: 0
   m_Name: Win Collider
   m_TagString: Untagged
@@ -62341,6 +62342,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466290583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466290580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b9cd55c966c6a45aac73e7d81b0e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1522180920}
 --- !u!1001 &1466536914
 PrefabInstance:
   m_ObjectHideFlags: 0
