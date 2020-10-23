@@ -9,6 +9,7 @@ public class CharacterMove : MonoBehaviour
 {
 
     public GameObject inputField;
+    public Animator UIAnim;
     public string steps;
     public int stepsNum;
     public GameObject cube;
@@ -52,6 +53,7 @@ public class CharacterMove : MonoBehaviour
             var newPosW = currentPos + Vector3.forward * moveSpaces;
             if (hitNorth.distance <= moveSpaces)
             {
+                UIAnim.SetTrigger("CantGo");
                 print("cannot Move here ");
                 cannotGoThere = true;
             }
@@ -74,12 +76,16 @@ public class CharacterMove : MonoBehaviour
             var newPosW = currentPos + Vector3.left * moveSpaces;
             if (hitWest.distance <= moveSpaces)
             {
+<<<<<<< HEAD
                 print("cannot Move here "); 
                 cannotGoThere = true;
+=======
+                UIAnim.SetTrigger("CantGo");
+                print("cannot Move here ");
+>>>>>>> ea3faa953d8660ac77d638913ea648bf91c29fc6
             }
             else
             {
-
                 cube.transform.position = newPosW;
                 currentPos = newPosW;
             }
@@ -96,6 +102,7 @@ public class CharacterMove : MonoBehaviour
             var newPosW = currentPos + Vector3.right * moveSpaces;
             if (hitEast.distance <= moveSpaces)
             {
+                UIAnim.SetTrigger("CantGo");
                 print("cannot Move here ");
                 cannotGoThere = true;
             }
@@ -117,6 +124,7 @@ public class CharacterMove : MonoBehaviour
             var newPosW = currentPos + Vector3.back * moveSpaces;
             if (hitSouth.distance <= moveSpaces)
             {
+                UIAnim.SetTrigger("CantGo");
                 print("cannot Move here ");
                 cannotGoThere = true;
             }
