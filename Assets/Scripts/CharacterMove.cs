@@ -18,6 +18,9 @@ public class CharacterMove : MonoBehaviour
     public string east = "east";
     public string west = "west";
     RaycastHit hit;
+    public List<String> logInput = new List<String>();
+    public bool cannotGoThere;
+
 
     private void Start()
     {
@@ -29,12 +32,12 @@ public class CharacterMove : MonoBehaviour
     {
 
         steps = inputField.GetComponent<Text>().text;
+        logInput.Add(steps);
         string[] words = steps.Split(' ');
         int stepsInt = Int32.Parse(words[0]);
         direction = words[1];
         stepsNum = stepsInt;
-
-
+         
 
 
 
@@ -50,6 +53,7 @@ public class CharacterMove : MonoBehaviour
             if (hitNorth.distance <= moveSpaces)
             {
                 print("cannot Move here ");
+                cannotGoThere = true;
             }
             else
             {
@@ -70,7 +74,8 @@ public class CharacterMove : MonoBehaviour
             var newPosW = currentPos + Vector3.left * moveSpaces;
             if (hitWest.distance <= moveSpaces)
             {
-                print("cannot Move here ");
+                print("cannot Move here "); 
+                cannotGoThere = true;
             }
             else
             {
@@ -92,6 +97,7 @@ public class CharacterMove : MonoBehaviour
             if (hitEast.distance <= moveSpaces)
             {
                 print("cannot Move here ");
+                cannotGoThere = true;
             }
             else
             {
@@ -112,6 +118,7 @@ public class CharacterMove : MonoBehaviour
             if (hitSouth.distance <= moveSpaces)
             {
                 print("cannot Move here ");
+                cannotGoThere = true;
             }
             else
             {

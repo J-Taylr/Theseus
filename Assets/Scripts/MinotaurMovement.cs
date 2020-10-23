@@ -58,19 +58,14 @@ public class MinotaurMovement : MonoBehaviour
          
 
             agent.SetDestination(positionOfPlayer);
+        if (move.cannotGoThere == true)
+        {
+            minotaur.GetComponent<NavMeshAgent>().isStopped = true;
+            move.cannotGoThere = false;
+        }
 
-        
-
+            minotaurPosition = minotaur.transform.position;
        
-
-        minotaurPosition = minotaur.transform.position;
-        
-        
-
-
-
-
-
     }
     public void nearPlayer()
     {
